@@ -10,6 +10,6 @@ let FavColor;
 FavColor = prompt('qual è il tuo colore preferito?');
 console.log(FavColor);
 
-
-let Password = userName.concat(LastName, FavColor);
+let Password = userName + LastName + FavColor + 21;
 console.log(Password);
+
