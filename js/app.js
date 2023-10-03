@@ -2,14 +2,21 @@ let userName;
 userName = prompt('qual è il tuo nome?');
 console.log(userName);
 
-let LastName;
-LastName = prompt('qual è il tuo cognome?');
-console.log(LastName);
+let lastName;
+lastName = prompt('qual è il tuo cognome?');
+console.log(lastName);
 
-let FavColor;
-FavColor = prompt('qual è il tuo colore preferito?');
-console.log(FavColor);
+let favColor;
+favColor = prompt('qual è il tuo colore preferito?');
+console.log(favColor);
 
-let Password = userName + LastName + FavColor + 21;
-console.log(Password);
+let randomNumber;
+randomNumber = Math.floor(Math.random() * 10);
+console.log(randomNumber);
 
+let password = userName + lastName + favColor + randomNumber;
+console.log(password);
+
+
+const passwordDomElement = document.getElementById('password');
+passwordDomElement.innerHTML = password;
